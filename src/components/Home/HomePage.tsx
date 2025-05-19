@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import ButtonUi from '../Ui/Button';
 
 export default function HomePage() {
@@ -19,11 +18,9 @@ export default function HomePage() {
                     </div>
                 </div>
                 <div className="lg:w-1/2 w-[17em] md:relative absolute bottom-0 right-0 z-0 ">
-                    <Image 
-                        src="/images/PersonImage.png"
+                    <img 
+                        src="/PersonImage.png"
                         alt="Professional person" 
-                        width={500}
-                        height={500}
                         className="w-full max-w-lg  object-contain" 
                     />
                 </div>
