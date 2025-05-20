@@ -24,7 +24,7 @@ export default function Navbar() {
             {/* Links */}
             <div className="hidden md:flex gap-[5em] items-center">
                 <Link href="/course">Courses</Link>
-                <Link href="">Universities</Link>
+                <Link href="/university">IGNOU</Link>
                 <Link href="">About Us</Link>
                 <ButtonUi text="Enquire" />
             </div>

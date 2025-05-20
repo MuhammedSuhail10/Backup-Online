@@ -28,8 +28,8 @@ export default function DrawerUi() {
           </Link>
         </ListItem>
         <ListItem className="mt-[-10px] " disablePadding>
-          <Link href="/course" className="bg-[#171717] dark:bg-[#ededed] text-[#fff] dark:text-[#000] py-[0.8em] px-[1.2em] text-lg rounded-full font-[family-name:var(--font-montserrat)] w-[100%] mt-10">
-            Universities
+          <Link href="/university" className="bg-[#171717] dark:bg-[#ededed] text-[#fff] dark:text-[#000] py-[0.8em] px-[1.2em] text-lg rounded-full font-[family-name:var(--font-montserrat)] w-[100%] mt-10">
+            IGNOU
           </Link>
         </ListItem>
         <ListItem className="mt-[-10px] " disablePadding>
