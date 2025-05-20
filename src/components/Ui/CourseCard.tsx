@@ -8,9 +8,9 @@ type Course = {
 
 export default function CourseCard({data}: {data: Course}) {
     return(
-        <div className="border rounded-2xl w-[30em] shadow-md p-6 mt-[2em] hover:shadow-xl transition duration-300">
+        <div className="border rounded-2xl w-[25em] shadow-md p-6 mt-[2em] hover:shadow-xl transition duration-300">
             <div className="flex justify-between items-center md:h-[5em] ">
-                <h2 className="text-[15pt] font-bold mb-2 w-[70%] md:w-[85%] ">{data.name}</h2>
+                <h2 className="text-[15pt] font-bold mb-2 w-[70%] md:w-[80%] ">{data.name}</h2>
                 <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full"> {data.duration} </span>
             </div>
             <div className="mt-1 space-y-2">
