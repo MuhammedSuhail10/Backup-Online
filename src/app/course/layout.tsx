@@ -1,3 +1,3 @@
-export default function CourseLayout({children,}: {children: React.ReactNode}) {
+export default function AboutLayout({children,}: {children: React.ReactNode}) {
   return <section>{children}</section>
 }

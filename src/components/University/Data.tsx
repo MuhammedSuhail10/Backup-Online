@@ -89,7 +89,7 @@ export default function UniversityData() {
     return (
         <div className="font-[family-name:var(--font-montserrat)] md:px-[15em] md:my-[4em] px-[0.5em] my-[1.5em] ">
             <h1 className="md:text-[30pt] text-[21pt] my-[0.5em] font-[600] leading-[27px] ">Indira Gandhi National Open University - Online</h1>
-            <p className="md:text-[12.5pt] text-[11.5pt] text-gray-600 dark:text-slate-300 ">Enroll today for IGNOU Online Courses at this esteemed central government university, which has over 37 years of experience in providing quality education. With full accreditation from NAAC, approval from AICTE, and recognition by UGC, IGNOU upholds the highest standards of academic excellence.</p>
+            <p className="md:text-[12.5pt] text-[11.5pt] text-gray-600 dark:text-slate-300 ">For the present program, we have chosen IGNOU (Indira Gandhi National Open University) as the Institute we enroll our students with for obtaining their degrees. Along with registration with our learning program, the student enrolls with IGNOU as anyone would normally do. The difference here being that we will be supporting the student's learning whilst pursuing their degree from IGNOU.</p>
 
             {/* Brochure */}
             <div className="md:my-[2em] my-[1em] ">

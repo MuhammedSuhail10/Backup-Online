@@ -28,7 +28,7 @@ export default function CourseCard({data}: {data: Course}) {
                 </div>
             </div>
             <div className="mt-6">
-                <ButtonUi text="View Details" />
+                <ButtonUi text="Know More" />
             </div>
         </div>
     )

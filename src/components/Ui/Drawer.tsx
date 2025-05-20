@@ -33,14 +33,14 @@ export default function DrawerUi() {
           </Link>
         </ListItem>
         <ListItem className="mt-[-10px] " disablePadding>
-          <Link href="/course" className="bg-[#171717] dark:bg-[#ededed] text-[#fff] dark:text-[#000] py-[0.8em] px-[1.2em] text-lg rounded-full font-[family-name:var(--font-montserrat)] w-[100%] mt-10">
+          <Link href="/about" className="bg-[#171717] dark:bg-[#ededed] text-[#fff] dark:text-[#000] py-[0.8em] px-[1.2em] text-lg rounded-full font-[family-name:var(--font-montserrat)] w-[100%] mt-10">
             About Us
           </Link>
         </ListItem>
       </List>
       <List sx={{ padding: "20px" }}>
         <ListItem className="" disablePadding>
-          <Link href="/course" className="bg-[#171717] dark:bg-[#ededed] text-[#fff] dark:text-[#000] py-[0.8em] px-[1.2em] text-lg rounded-full font-[family-name:var(--font-montserrat)] w-[100%] mt-10">
+          <Link href="/course" className="bg-blue-900 dark:bg-blue-400 text-[#fff] dark:text-[#000] py-[0.8em] px-[1.2em] text-lg rounded-lg font-[family-name:var(--font-montserrat)] w-[100%] mt-10">
             Enquire
           </Link>
         </ListItem>
