@@ -4,7 +4,7 @@ import Link from "next/link";
 import ButtonUi from "../Ui/Button";
 import DrawerUi from "../Ui/Drawer";
 import { useState, useEffect } from "react";
-import ImageDisplay from "@/helpers/ImageDisplay.tsx"
+import ImageDisplay from "@/helpers/ImageDisplay"
 
 export default function Navbar() {
     const [isFixed, setIsFixed] = useState(false);
