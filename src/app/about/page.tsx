@@ -10,8 +10,8 @@ export default function Page() {
             <Navbar />
             <Header />
             <Section />
-            <Conseltation text="Lets Join Hands For A Better Future" bg="bg-[#5fa8d3] dark:bg-[#003566]" />
-            <Footer bg="dark:bg-[#343a40] bg-[#dee2e6]" />
+            <Conseltation text="Lets Join Hands For A Better Future" />
+            <Footer />
         </>
     )
 }

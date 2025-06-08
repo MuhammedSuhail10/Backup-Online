@@ -21,7 +21,7 @@ export default function Navbar() {
     return (
         <div className={`font-[family-name:var(--font-montserrat)] md:px-[10em] px-[10px] bg-white flex justify-between items-center w-full transition-all duration-300 shadow-lg ${isFixed ? "fixed h-[7vh] top-0 left-0 right-0 z-50 " : "h-[10vh]"}`}>
             <Link href="/" className="text-xl flex items-center">
-                <ImageDisplay src='/Icon.png' className='md:block h-[4em] max-w-lg object-contain ' alt='Background Image 1' width={isFixed ? 130 : 150 } />
+                <ImageDisplay src='/Icons.png' className='md:block h-[4em] max-w-lg object-contain ' alt='Background Image 1' width={isFixed ? 130 : 150 } />
             </Link>
             {/* Links */}
             <div className="hidden md:flex gap-[5em] items-center">

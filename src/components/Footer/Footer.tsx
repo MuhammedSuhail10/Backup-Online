@@ -9,7 +9,7 @@ export default function Footer() {
         <>
             <div style={{backgroundColor: color.secondaryColor}} className={`font-[family-name:var(--font-montserrat)] flex md:flex-row flex-col `}>
                 <Link href="/" style={{borderColor: color.secondaryColor}} className="text-xl bg-white border-1 md:px-[10em] md:w-1/3 md:rounded-r-full md:rounded-bl-none rounded-b-[5em] py-[2em] md:py-0 flex flex-row items-center justify-center">
-                    <ImageDisplay src='/Icon.png' className='md:block max-w-lg object-contain ' alt='Background Image 1' width={180} />
+                    <ImageDisplay src='/Icons.png' className='md:block max-w-lg object-contain ' alt='Background Image 1' width={180} />
                 </Link>
 
                 <div className="flex flex-row justify-between py-[1.5em] px-[3em] md:px-[15em] md:py-[4em] md:w-2/3 ">
