@@ -6,7 +6,7 @@ export default function Header() {
                 alt="Background"
                 className="w-full md:h-[50dvh] object-cover"
             />
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center backdrop-blur-[1px] md:bg-black/20 bg-black/10">
                 <h1 className="md:text-[32pt] text-[25pt] font-[600] text-white drop-shadow-xl">About Us</h1>
             </div>
         </div>

@@ -1,41 +1,37 @@
 import Link from "next/link";
+import colors from "@/helpers/color";
+import ImageDisplay from "@/helpers/ImageDisplay"
 
-export default function Footer({ bg = "bg-[#5fa8d3] dark:bg-[#003566]" }: { bg?: string }) {
+export default function Footer() {
     const currentYear = new Date().getFullYear();
+    const color = colors();
     return (
         <>
-            <div className={`font-[family-name:var(--font-montserrat)] ${bg} md:px-[15em] px-[1em] md:py-[4em] py-[2em] flex justify-between `}>
-                <Link href="/" className="text-xl flex flex-col md:flex-row items-center justify-center">
-                    <img
-                        src="/IconImage.png"
-                        alt="Icon"
-                        className="h-[2em] md:h-[3.5em] max-w-lg  object-contain"
-                    />
-                    <img
-                        src="/Name.png"
-                        alt="Icon"
-                        className="md:h-[4em] h-[2em] max-w-lg  object-contain"
-                    />
+            <div style={{backgroundColor: color.secondaryColor}} className={`font-[family-name:var(--font-montserrat)] flex md:flex-row flex-col `}>
+                <Link href="/" style={{borderColor: color.secondaryColor}} className="text-xl bg-white border-1 md:px-[10em] md:w-1/3 md:rounded-r-full md:rounded-bl-none rounded-b-[5em] py-[2em] md:py-0 flex flex-row items-center justify-center">
+                    <ImageDisplay src='/Icon.png' className='md:block max-w-lg object-contain ' alt='Background Image 1' width={180} />
                 </Link>
 
-                {/* Quick links */}
-                <div className="flex flex-col gap-y-[0.5em] ">
-                    <h3 className="md:text-[15pt] text-[12.5pt] font-[600] ">Quick Links</h3>
-                    <Link href="/course" className="text-[11pt] md:text-[12.5pt] ">Courses</Link>
-                    <Link href="/university" className="text-[11pt] md:text-[12.5pt] ">IGNOU</Link>
-                    <Link href="/about" className="text-[11pt] md:text-[12.5pt] ">About Us</Link>
-                </div>
+                <div className="flex flex-row justify-between py-[1.5em] px-[3em] md:px-[15em] md:py-[4em] md:w-2/3 ">
+                    {/* Quick links */}
+                    <div className="flex flex-col gap-y-[0.5em] ">
+                        <h3 className="md:text-[17pt] text-[13pt] font-[700] ">Quick Links</h3>
+                        <Link href="/course" className="text-[11.5pt] md:text-[14pt] ">Courses</Link>
+                        <Link href="/university" className="text-[11.5pt] md:text-[14pt] ">IGNOU</Link>
+                        <Link href="/about" className="text-[11.5pt] md:text-[14pt] ">About Us</Link>
+                    </div>
 
-                {/* Quick links */}
-                <div className="flex flex-col gap-y-[0.5em] ">
-                    <h3 className="md:text-[15pt] text-[12.5pt] font-[600] ">Disclaimer</h3>
-                    <Link href="/about" className="text-[11pt] md:text-[12.5pt] ">Terms & Condition</Link>
-                    <Link href="/course" className="text-[11pt] md:text-[12.5pt] ">Privacy Policy</Link>
-                    <Link href="/university" className="text-[11pt] md:text-[12.5pt] ">Refund Policy</Link>
+                    {/* Quick links */}
+                    <div className="flex flex-col gap-y-[0.5em] ">
+                        <h3 className="md:text-[17pt] text-[13pt] font-[700] ">Disclaimer</h3>
+                        <Link href="/about" className="text-[11.5pt] md:text-[14pt] ">Terms & Condition</Link>
+                        <Link href="/course" className="text-[11.5pt] md:text-[14pt] ">Privacy Policy</Link>
+                        <Link href="/university" className="text-[11.5pt] md:text-[14pt] ">Refund Policy</Link>
+                    </div>
                 </div>
             </div>
-            <div className="my-[1em] font-[family-name:var(--font-montserrat)] text-center md:text-[15pt] text-[11pt] px-[2em]  ">
-                Copyright ©{currentYear}. All rights reserved by BackUp.<span className="text-teal-300 ">in</span>.
+            <div className="my-[1em] font-[family-name:var(--font-montserrat)] text-center md:text-[15.5pt] text-[12pt] px-[2em]  ">
+                Copyright ©{currentYear}. All rights reserved and maintained by <span style={{color: color.primaryColor}} className="font-[800] ">BackUp.<span style={{color: color.secondaryColor}}>in</span></span>.
             </div>
         </>
     )

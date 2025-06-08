@@ -35,7 +35,7 @@ export default function ImageDisplay({ src, alt, width = 500, height = 300, fill
 
   if (hasError) {
     return (
-      <div className={`flex items-center justify-center bg-gray-200 text-gray-500 ${className}`} style={{ width: fill ? '100%' : width, height: fill ? '100%' : height }}>
+      <div className={`flex items-center justify-center bg-gray-200 text-gray-500 ${className}`} style={{ width: fill ? 'w-full' : width, height: fill ? '100%' : height }}>
         <span>Failed to load image</span>
       </div>
     );
@@ -44,8 +44,8 @@ export default function ImageDisplay({ src, alt, width = 500, height = 300, fill
   return (
     <div className={`relative ${className}`}>
       {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center animate-pulse" style={{ width: fill ? '100%' : width, height: fill ? '100%' : height }}>
-          <span className="text-gray-400">Loading...</span>
+        <div className="absolute inset-0 flex items-center justify-center" style={{ width: fill ? '100%' : "1em", height: fill ? '100%' : "1em" }}>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-1 border-gray-400"></div>
         </div>
       )}
 

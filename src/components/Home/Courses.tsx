@@ -30,8 +30,8 @@ export default function Courses() {
     ]
 
     return (
-        <div className="md:my-[5em] my-[2.5em] font-[family-name:var(--font-montserrat)]  ">
-            <h1 className="text-center md:text-[32pt] text-[20pt] ">Our Courses</h1>
+        <div className="md:my-[2.5em] my-[1.5em] font-[family-name:var(--font-montserrat)]  ">
+            <h1 className="md:text-[28pt] text-[20pt] font-[600] text-black drop-shadow-lg text-center">Our Courses</h1>
             <div className="flex flex-wrap justify-between md:px-[10em] px-[1.5em] md:mt-[1em] ">
                 {courses.map(course => <CourseCard key={course.id} data={course} />)}
             </div>
