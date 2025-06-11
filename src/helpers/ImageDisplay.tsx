@@ -56,7 +56,7 @@ export default function ImageDisplay({ src, alt, width = 500, height = 300, fill
         height={fill ? undefined : height}
         fill={fill}
         quality={quality}
-        className={`${isLoading ? 'opacity-0' : 'opacity-100'} rounded-md transition-opacity duration-300`}
+        className={`${isLoading ? 'opacity-0' : 'opacity-100'} ${className} rounded-md transition-opacity duration-300`}
         onLoad={handleLoadingComplete}
         onError={handleError}
         unoptimized={true}

@@ -26,12 +26,12 @@ export default function Conseltation({ text = "Schedule a One to One Section" }:
                     }}>
                 </div>
                 <div className="md:w-1/3 flex md:flex-col justify-center gap-[1em] md:mt-0 mt-[1.5em] items-center font-[family-name:var(--font-poppins)]">
-                    <a href="" style={{ backgroundColor: color.primaryColor, boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)' }} className=' text-[13pt] text-[#fff] md:w-[60%] w-[45%] flex items-center gap-[0.3em] justify-center h-[3.5em] rounded-[20px] '>
+                    <a href="" style={{ backgroundColor: color.primaryColor, boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)' }} className=' text-[13pt] text-[#fff] md:w-[60%] w-[45%] flex items-center gap-[0.3em] justify-center md:h-[3.5em] h-[3em] rounded-[20px] '>
                         <PhoneInTalkOutlinedIcon fontSize='small' />
                         <span className="hidden md:block">Call an Expert</span>
                         <span className="md:hiddenock">Call Us</span>
                     </a>
-                    <a href="" style={{ color: color.primaryColor, boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)' }} className=' text-[13pt] bg-[#fff] md:w-[60%] w-[45%] flex items-center gap-[0.3em] justify-center h-[3.5em] rounded-[20px] '>
+                    <a href="" style={{ color: color.primaryColor, boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)' }} className=' text-[13pt] bg-[#fff] md:w-[60%] w-[45%] flex items-center gap-[0.3em] justify-center md:h-[3.5em] h-[3em] rounded-[20px] '>
                         <WhatsAppIcon fontSize='small' />
                         <span className="hidden md:block">Message an Expert</span>
                         <span className="md:hidden">Message Us</span>

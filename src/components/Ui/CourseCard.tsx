@@ -29,8 +29,9 @@ export default function CourseCard({data}: {data: Course}) {
                     <p><strong>University:</strong> {data.university}</p>
                 </div>
             </div>
-            <div className="mt-6">
-                <ButtonUi text="Know More" />
+            <div className="mt-6 flex justify-between">
+                <ButtonUi text="Download Brochure" py="py-[0.5em] " px="md:px-8 px-5" />
+                <ButtonUi text="Know More" py="py-[0.5em] " px="md:px-8 px-5" inverted />
             </div>
         </div>
     )
