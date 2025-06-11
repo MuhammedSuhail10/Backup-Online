@@ -29,7 +29,7 @@ export default function Conseltation({ text = "Schedule a One to One Section" }:
                     <a href="" style={{ backgroundColor: color.primaryColor, boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)' }} className=' text-[13pt] text-[#fff] md:w-[60%] w-[45%] flex items-center gap-[0.3em] justify-center md:h-[3.5em] h-[3em] rounded-[20px] '>
                         <PhoneInTalkOutlinedIcon fontSize='small' />
                         <span className="hidden md:block">Call an Expert</span>
-                        <span className="md:hiddenock">Call Us</span>
+                        <span className="md:hidden block">Call Us</span>
                     </a>
                     <a href="" style={{ color: color.primaryColor, boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)' }} className=' text-[13pt] bg-[#fff] md:w-[60%] w-[45%] flex items-center gap-[0.3em] justify-center md:h-[3.5em] h-[3em] rounded-[20px] '>
                         <WhatsAppIcon fontSize='small' />

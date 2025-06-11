@@ -30,8 +30,8 @@ export default function CourseCard({data}: {data: Course}) {
                 </div>
             </div>
             <div className="mt-6 flex justify-between">
-                <ButtonUi text="Download Brochure" py="py-[0.5em] " px="md:px-8 px-5" />
-                <ButtonUi text="Know More" py="py-[0.5em] " px="md:px-8 px-5" inverted />
+                <ButtonUi text="Brochure" py="py-[0.5em] " px="md:px-8 px-3" />
+                <ButtonUi text="Know More" py="py-[0.5em] " px="md:px-8 px-3" inverted />
             </div>
         </div>
     )
