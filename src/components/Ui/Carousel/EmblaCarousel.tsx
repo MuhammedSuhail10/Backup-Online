@@ -9,7 +9,7 @@ import './embla.css'
 import ImageDisplay from '@/helpers/ImageDisplay'
 
 type PropType = {
-  slides: number[]
+  images: string[],
   options?: EmblaOptionsType
 }
 
