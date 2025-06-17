@@ -16,7 +16,7 @@ export default function Section() {
 
             <div className="my-[2em] ">
                 <h1 className="md:text-[28pt] text-[20pt] font-[600] text-black drop-shadow-lg">Who We Are?</h1>
-                <p className="md:text-[15pt] text-[12.5pt] mt-[0.5em] ">A group of CMA graduates came together with a shared purpose—to support both their juniors and seniors in securing a crucial academic milestone often overlooked during the pursuit of professional qualifications. Having experienced firsthand the challenges of missing out on a formal degree while focusing solely on CMA, they understood the long-term impact it could have on one’s career. Their initiative aims to guide others in balancing professional courses with academic degrees, ensuring no student is left without a strong educational foundation. Through this effort, they hope to empower future professionals with both credentials and confidence.</p>
+                <p className="md:text-[15pt] text-[12.5pt] mt-[0.5em] ">A group of CMA aspirants came together with a shared purpose—to support both their juniors and seniors in securing a crucial academic milestone often overlooked during the pursuit of professional qualifications. Having experienced firsthand the challenges of missing out on a formal degree while focusing solely on CA, CMA, ACCA, CS, they understood the long-term impact it could have on one’s career. Their initiative aims to guide others in balancing professional courses with academic degrees, ensuring no student is left without a strong educational foundation. Through this effort, they hope to empower future professionals with both credentials and confidence.</p>
             </div>
 
             <div className="my-[2em] ">

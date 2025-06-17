@@ -23,13 +23,13 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     useAutoplay(emblaApi)
 
   return (
-    <div className="embla md:h-[90dvh] h-[75dvh]">
-      <div className="embla__viewport md:h-[90dvh] h-[100%]" ref={emblaRef}>
-        <div className="embla__container md:h-[90dvh] h-[100%]">
+    <div className="embla md:h-[90dvh] ">
+      <div className="embla__viewport md:h-[90dvh]" ref={emblaRef}>
+        <div className="embla__container md:h-[90dvh]">
           {images.map((index) => (
-            <div className="embla__slide md:h-[90dvh] h-[100%]" key={index}>
-              <div className="embla__slide__number md:h-[90dvh] h-[100%]">
-                <ImageDisplay src={index} className="w-[100dvw] md:h-[90dvh] h-[100%] " alt="Bg" />
+            <div className="embla__slide md:h-[90dvh] " key={index}>
+              <div className="embla__slide__number md:h-[90dvh]">
+                <img src={index} className="w-[100dvw] md:h-[90dvh] h-auto " alt="Bg" />
               </div>
             </div>
           ))}

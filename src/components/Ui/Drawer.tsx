@@ -10,7 +10,10 @@ import CloseIcon from '@mui/icons-material/Close';
 import ListItem from '@mui/material/ListItem';
 import Link from 'next/link';
 import colors from '@/helpers/color';
-import ButtonUi from "../Ui/Button";
+import Social from "../Ui/Social";
+import ImageDisplay from "@/helpers/ImageDisplay";
+
+import Divider from '@mui/material/Divider';
 
 export default function DrawerUi() {
   const [open, setOpen] = useState(false);
@@ -21,34 +24,40 @@ export default function DrawerUi() {
 
   const DrawerList = (
     <Box sx={{ width: 300, height: '100dvh', backgroundColor: color.tertiaryColor }} className="font-[600]" role="presentation" onClick={toggleDrawer(false)}>
-      <List sx={{ padding: "20px", height: '10dvh'}}>
-        <div style={{backgroundColor: color.primaryColor}} className="w-1/5 items-center flex justify-center p-2 rounded-full">
-          <CloseIcon  className="dark:text-white " fontSize="large" />
+      <List sx={{ height: '10dvh', marginBottom: '1em',  }}>
+        <div className=" items-center flex justify-between bg-white px-[1em] mb-1 ">
+          <ImageDisplay src='/Icons.png' className='w-[8em] object-contain ' alt='Background Image 1' />
+          <div style={{ backgroundColor: color.primaryColor }} className="items-center flex justify-center p-2 rounded-full">
+            <CloseIcon className="dark:text-white " fontSize="medium" />
+          </div>
         </div>
       </List>
-      <List sx={{ padding: "20px", height: '70dvh' }}>
+      <List sx={{ padding: "20px", height: '75dvh', display: 'flex', flexDirection: 'column', gap: '2em' }}>
         <ListItem className="mt-1 " disablePadding>
-          <Link href="/course" className="bg-[#ededed] text-[#000] py-[0.8em] px-[1.2em] text-lg rounded-full font-[family-name:var(--font-montserrat)] w-[100%] mt-10">
+          <Link href="/" className="bg-[#ededed] text-[#000] py-[0.8em] px-[1.2em] text-lg rounded-full font-[family-name:var(--font-montserrat)] w-[100%]">
+            Home
+          </Link>
+        </ListItem>
+        <ListItem className="mt-1 " disablePadding>
+          <Link href="/course" className="bg-[#ededed] text-[#000] py-[0.8em] px-[1.2em] text-lg rounded-full font-[family-name:var(--font-montserrat)] w-[100%]">
             Courses
           </Link>
         </ListItem>
-        <ListItem className="mt-[-10px] " disablePadding>
-          <Link href="/university" className="bg-[#ededed] text-[#000] py-[0.8em] px-[1.2em] text-lg rounded-full font-[family-name:var(--font-montserrat)] w-[100%] mt-10">
-            IGNOU
+        <ListItem className=" " disablePadding>
+          <Link href="/university" className="bg-[#ededed] text-[#000] py-[0.8em] px-[1.2em] text-lg rounded-full font-[family-name:var(--font-montserrat)] w-[100%]">
+            About IGNOU
           </Link>
         </ListItem>
-        <ListItem className="mt-[-10px] " disablePadding>
-          <Link href="/about" className="bg-[#ededed] text-[#000] py-[0.8em] px-[1.2em] text-lg rounded-full font-[family-name:var(--font-montserrat)] w-[100%] mt-10">
+        <ListItem className=" " disablePadding>
+          <Link href="/about" className="bg-[#ededed] text-[#000] py-[0.8em] px-[1.2em] text-lg rounded-full font-[family-name:var(--font-montserrat)] w-[100%]">
             About Us
           </Link>
         </ListItem>
       </List>
-      <List sx={{ padding: "20px" }}>
-        <ListItem className="flex justify-center  " disablePadding>
-          {/* <Link href="/course" className="bg-blue-900 dark:bg-blue-400 text-[#000] py-[0.8em] px-[1.2em] text-lg rounded-lg font-[family-name:var(--font-montserrat)] w-[100%] mt-10">
-            Enquire
-          </Link> */}
-          <ButtonUi text="Enquire" px="px-[5em]" py="py-[1em] " />
+      <Divider variant="middle"  />
+      <List sx={{ padding: "20px", height: '12dvh', width: 300 }}>
+        <ListItem className="flex h-[100%] justify-between items-center gap-[1em] text-white " disablePadding>
+          <Social />
         </ListItem>
       </List>
     </Box>
